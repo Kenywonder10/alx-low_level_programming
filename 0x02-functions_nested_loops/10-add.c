@@ -4,7 +4,7 @@
 *@num1: the first integer to be added.
 *@num2: the second integer to be added.
 *
-*Retuen: the result of the addition.
+*Return: the result of the addition.
 */
 int add(int num1, int num2)
 {
