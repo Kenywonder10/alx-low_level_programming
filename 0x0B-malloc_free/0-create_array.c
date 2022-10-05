@@ -27,7 +27,7 @@ return (NULL);
 else
 {
 position = 0;
-while (position < size) /*size of array*/
+while (position < size) /*while of array*/
 {
 *(buffer + position) = c;
 position++;
