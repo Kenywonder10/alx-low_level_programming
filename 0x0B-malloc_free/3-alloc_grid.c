@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*@alloc_grid - returns a pointer to a
+*alloc_grid - returns a pointer to a
 *2 dimensionl array of integers.
 *@width: width of array
 *@height: height of array
@@ -32,9 +32,9 @@ int **alloc_grid(int width, int height)
 				while (i >= 0)
 				{
 					free(array[i]);
-					i++;
+					i--;
 				}
-				free(array[i]);
+				free(array);
 				return (NULL);
 			}
 		}
