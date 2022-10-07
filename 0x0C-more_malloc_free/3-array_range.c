@@ -9,7 +9,7 @@
 *Return: pointer to newly allocated memory or NULL if fails
 */
 int *array_range(int min, int max)
-i{
+{
 	int i, l;
 	int *a;
 
