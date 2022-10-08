@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * _print - moves a string one place to the left and points the string
+ * _print - moves a string one place to the left and prints the string
  * @str: string to move
  * @l: size of string
  *
@@ -85,8 +85,8 @@ int check_for_digits(char **av)
 
 /**
  * init - initializes a string
- * @str: sting to initialize
- * @l: lenght of strinf
+ * @str: string to initialize
+ * @l: lenght of string
  *
  * Return: void
  */
@@ -120,7 +120,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	for (l1 = 0; argv[1][l1]; l1++)
-
+		;
 	for (l2 = 0; argv[2][l2]; l2++)
 		;
 	ln = l1 + l2 + 1;
@@ -132,7 +132,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	init(a, ln - 1);
-	for (ti = 12 - 1, i = 0; ti >= 0; ti--, i++)
+	for (ti = l2 - 1, i = 0; ti >= 0; ti--, i++)
 	{
 		t = mul(argv[2][ti], argv[1], l1 - 1, a, (ln - 2) - i);
 		if (t == NULL)
