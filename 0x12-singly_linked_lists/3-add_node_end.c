@@ -10,7 +10,6 @@
  * Return: If the function fails - NULL.
  *		Otherwise - the address of the element.
  */
-
 list_t *add_node_end(list_t **head, const char *str)
 {
 	char *dup;
@@ -20,13 +19,6 @@ list_t *add_node_end(list_t **head, const char *str)
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
 		return (NULL);
-
-	dup = strdup(str);
-	if (str == NULL)
-	{
-		free(new);
-		return (NULL);
-	}
 
 	dup = strdup(str);
 	if (str == NULL)
